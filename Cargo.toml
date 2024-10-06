@@ -1,0 +1,26 @@
+[workspace]
+resolver = "2"
+members = [
+    "src/aptos-container",
+    "src/container-interface"
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2018"
+authors = ["Tranduy1dol <@tranduy1dol>"]
+
+[workspace.dependencies]
+anyhow = "1.0.89"
+async-trait = "0.1.83"
+testcontainers = "0.23.1"
+container-interface = { path = "src/container-interface" }
+config = "0.14.0"
+serde = "1.0.210"
+thiserror = "1.0.64"
+tokio = "1.40.0"
+base64 = "0.22.1"
+rand = "0.9.0-alpha.2"
+walkdir = "2.5.0"
+regex = "1.11.0"
+log = "0.4.22"
